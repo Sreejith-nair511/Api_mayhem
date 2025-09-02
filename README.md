@@ -152,16 +152,16 @@ curl -X POST "https://localhost:7xxx/api/users" \
 - Implement pagination for large datasets
 - Add comprehensive unit and integration tests
 
-And final notes for viresh
-witching to Database
-When ready to use a real database, simply:
-
-Uncomment the EF Core configuration in 
-Program.cs
-Switch repository registration from 
+And final notes for viresh<br>
+switching to Database<br>
+When ready to use a real database, simply:<br>
+<br><br><br>
+Uncomment the EF Core configuration in <br>
+Program.cs<br>
+Switch repository registration from <br>
 MockUserRepository
  to 
-DbUserRepository
+DbUserRepository<br>
 Update connection string in 
 appsettings.json
 Run migrations: dotnet ef migrations add InitialCreate && dotnet ef database update
